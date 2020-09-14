@@ -27,14 +27,18 @@ FAIL: test_square (__main__.TestExercice)
 Traceback (most recent call last):
   File "test_exercice.py", line 34, in test_square
     'Mauvais calcul du carré'
-AssertionError: Lists differ: [12, 200, 20] != [144, 40000, 400]
+AssertionError: Lists differ: [24, 400, 40] != [144, 40000, 400]
 
 First differing element 0:
-12
+24
 144
 
-- [12, 200, 20]
-+ [144, 40000, 400] : Mauvais calcul du carré
+- [24, 400, 40]
+?  ^
+
++ [144, 40000, 400]
+?  ^^      ++    +
+ : Mauvais calcul du carré
 
 ======================================================================
 FAIL: test_to_celsius (__main__.TestExercice)
